@@ -102,5 +102,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  </div></div></span>)
+  )
 }
