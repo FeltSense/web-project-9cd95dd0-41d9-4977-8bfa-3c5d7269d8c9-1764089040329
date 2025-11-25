@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+html { 
+  scroll-behavior: smooth; 
+}
+
+body {
+  font-family: var(--font-body);
+  @apply text-slate-600 leading-relaxed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  @apply text-slate-900 font-bold tracking-tight;
+}
+
+/* Premium button styles */
+.btn-primary {
+  @apply bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-xl px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl inline-block;
+}
+
+.btn-secondary {
+  @apply bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-xl px-8 py-4 transition-all duration-300 shadow-lg hover:shadow-xl inline-block;
+}
+
+/* Premium card styles */
+.card {
+  @apply rounded-2xl bg-white shadow-lg border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500;
+}
+
+/* Section spacing */
+.section {
+  @apply py-24 md:py-32;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-6 sm:px-8 lg:px-12;
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-300;
+}
+
+/* Focus states for accessibility */
+a:focus-visible, button:focus-visible {
+  @apply outline-2 outline-offset-2 outline-orange-600 rounded-lg;
+}
+
+/* Custom gradient backgrounds */
+.gradient-hero {
+  @apply bg-gradient-to-br from-slate-900 via-slate-800 to-orange-900;
+}
+
+.gradient-cta {
+  @apply bg-gradient-to-r from-orange-600 to-orange-700;
+}
